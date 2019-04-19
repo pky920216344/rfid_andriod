@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="4dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/ll_ant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_ant_0"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="4dp"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:padding="0dp"
+                android:text="290"
+                android:textAlignment="center"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/et_ant_1"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="4dp"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:padding="0dp"
+                android:text="290"
+                android:textAlignment="center"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/et_ant_2"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="4dp"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:padding="0dp"
+                android:text="290"
+                android:textAlignment="center"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/et_ant_3"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="4dp"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:padding="0dp"
+                android:text="290"
+                android:textAlignment="center"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/et_ant_4"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="4dp"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:padding="0dp"
+                android:text="290"
+                android:textAlignment="center"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/et_ant_5"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="4dp"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:padding="0dp"
+                android:text="290"
+                android:textAlignment="center"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/et_ant_6"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="4dp"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:padding="0dp"
+                android:text="290"
+                android:textAlignment="center"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/et_ant_7"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="4dp"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:padding="0dp"
+                android:text="290"
+                android:textAlignment="center"
+                android:textSize="17dp" />
+
+            <Button
+                android:id="@+id/btn_ant_auto"
+                android:layout_width="63dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="2dp"
+                android:padding="0dp"
+                android:text="AUTO" />
+
+            <Button
+                android:id="@+id/btn_ant_set"
+                android:layout_width="63dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="2dp"
+                android:padding="0dp"
+                android:text="ANT" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_inventory_condition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@id/ll_ant">
+
+            <TextView
+                android:id="@+id/tv_run_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="工作轮数" />
+
+            <EditText
+                android:id="@+id/et_run_count"
+                android:layout_width="47dp"
+                android:layout_height="30dp"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:padding="0dp"
+                android:text="2"
+                android:textAlignment="center"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/tv_timeout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="工作时间" />
+
+            <EditText
+                android:id="@+id/et_timeout"
+                android:layout_width="71dp"
+                android:layout_height="30dp"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:padding="0dp"
+                android:text="7000"
+                android:textAlignment="center"
+                android:textSize="17dp" />
+
+            <Switch
+                android:id="@+id/switch_inventory_run_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="8dp"
+                android:text="单次" />
+
+            <Button
+                android:id="@+id/btn_inventory"
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="8dp"
+                android:padding="0dp"
+                android:text="WORK" />
+
+            <Button
+                android:id="@+id/btn_inventory_stop"
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="8dp"
+                android:padding="0dp"
+                android:text="STOP" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_inventory_result"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@id/ll_inventory_condition">
+
+            <TextView
+                android:id="@+id/tv_serial_number"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="000000000000000"
+                android:textColor="#00F"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="数量:" />
+
+            <TextView
+                android:id="@+id/tv_epc_count"
+                android:layout_width="38dp"
+                android:layout_height="wrap_content"
+                android:text="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Log:" />
+
+            <TextView
+                android:id="@+id/tv_inventory_status"
+                android:layout_width="506dp"
+                android:layout_height="19dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl_gp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/ll_inventory_result">
+
+            <Switch
+                android:id="@+id/switch_broadcast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开机启动"
+                app:layout_constraintStart_toEndOf="@+id/cl_tem"
+                app:layout_constraintTop_toTopOf="@+id/rg_door_group"
+                tools:ignore="MissingConstraints" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/cl001"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_line">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="最短时间:" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="2dp"
+                    android:text="最长时间:"
+                    app:layout_constraintTop_toBottomOf="@id/textView6" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="2dp"
+                    android:text="平均时间:"
+                    app:layout_constraintTop_toBottomOf="@id/textView7" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="2dp"
+                    android:text="工作次数:"
+                    app:layout_constraintTop_toBottomOf="@id/textView8" />
+
+                <TextView
+                    android:id="@+id/tv_min_time"
+                    android:layout_width="70dp"
+                    android:layout_height="20dp"
+                    app:layout_constraintLeft_toRightOf="@id/textView6" />
+
+                <TextView
+                    android:id="@+id/tv_max_time"
+                    android:layout_width="70dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="2dp"
+                    app:layout_constraintLeft_toRightOf="@+id/textView7"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_min_time" />
+
+                <TextView
+                    android:id="@+id/tv_avg_time"
+                    android:layout_width="70dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="2dp"
+                    app:layout_constraintLeft_toRightOf="@+id/textView8"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_max_time" />
+
+                <TextView
+                    android:id="@+id/tv_work_num"
+                    android:layout_width="70dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="2dp"
+                    app:layout_constraintLeft_toRightOf="@id/textView11"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_avg_time" />
+            </android.support.constraint.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/iv_barcode"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toRightOf="@id/cl001"
+                android:contentDescription="TODO" android:contentDescription="TODO" app:srcCompat="@android:color/background_light" />
+
+            <me.shihao.library.XRadioGroup
+                android:id="@+id/rg_door_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/border_line"
+                app:layout_constraintLeft_toRightOf="@+id/iv_barcode">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rb_single_door_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:checked="true"
+                        android:text="单门无" />
+
+                    <RadioButton
+                        android:id="@+id/rb_double_door_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="2dp"
+                        android:text="双门无"
+                        app:layout_constraintLeft_toRightOf="@id/rb_single_door_no" />
+
+                    <RadioButton
+                        android:id="@+id/rb_single_door_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp"
+                        android:text="单门有"
+                        app:layout_constraintTop_toBottomOf="@id/rb_single_door_no" />
+
+                    <RadioButton
+                        android:id="@+id/rb_double_door_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="2dp"
+                        android:text="双门有"
+                        app:layout_constraintLeft_toRightOf="@id/rb_single_door_yes"
+                        app:layout_constraintTop_toBottomOf="@id/rb_double_door_no" />
+                </android.support.constraint.ConstraintLayout>
+            </me.shihao.library.XRadioGroup>
+
+            <Button
+                android:id="@+id/btn_open_door"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:padding="0dp"
+                android:text="开门"
+                android:textSize="14dp"
+                app:layout_constraintLeft_toRightOf="@+id/iv_barcode"
+                app:layout_constraintTop_toBottomOf="@id/rg_door_group" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/cl_tem"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/border_line"
+                app:layout_constraintLeft_toRightOf="@id/rg_door_group">
+
+                <Switch
+                    android:id="@+id/switch_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="温控"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="1dp"
+                    tools:layout_editor_absoluteY="1dp" />
+
+                <Button
+                    android:id="@+id/btn_down_temperature"
+                    android:layout_width="35dp"
+                    android:layout_height="30dp"
+                    android:padding="0dp"
+                    android:text="↓"
+                    app:layout_constraintTop_toBottomOf="@id/switch_temperature" />
+
+                <Button
+                    android:id="@+id/btn_up_temperature"
+                    android:layout_width="35dp"
+                    android:layout_height="30dp"
+                    android:padding="0dp"
+                    android:text="↑"
+                    app:layout_constraintLeft_toRightOf="@id/btn_down_temperature"
+                    app:layout_constraintTop_toBottomOf="@id/switch_temperature" />
+
+                <TextView
+                    android:id="@+id/tv_temperature"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="10"
+                    app:layout_constraintLeft_toRightOf="@id/btn_up_temperature"
+                    app:layout_constraintTop_toBottomOf="@id/switch_temperature" />
+
+                <TextView
+                    android:id="@+id/tv_cur_temperature"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_marginTop="2dp"
+                    app:layout_constraintTop_toBottomOf="@id/btn_down_temperature" />
+            </android.support.constraint.ConstraintLayout>
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl_gpio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/border_line"
+            app:layout_constraintTop_toBottomOf="@id/cl_gp">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="80dp"
+                android:gravity="center_vertical"
+                android:text="OFF:"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/btn_led_off"
+                android:layout_width="49dp"
+                android:layout_height="30dp"
+                android:padding="0dp"
+                android:text="LED"
+                android:textSize="15dp"
+                app:layout_constraintLeft_toRightOf="@+id/textView12" />
+
+            <Button
+                android:id="@+id/btn_door_off"
+                android:layout_width="49dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="2dp"
+                android:padding="0dp"
+                android:text="Dr1"
+                android:textSize="15dp"
+                app:layout_constraintLeft_toRightOf="@+id/btn_led_off" />
+
+            <Button
+                android:id="@+id/btn_door2_off"
+                android:layout_width="49dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="2dp"
+                android:padding="0dp"
+                android:text="Dr2"
+                android:textSize="15dp"
+                app:layout_constraintLeft_toRightOf="@+id/btn_door_off" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text="ON:"
+                app:layout_constraintRight_toRightOf="@id/textView12"
+                app:layout_constraintTop_toBottomOf="@id/textView12" />
+
+            <Button
+                android:id="@+id/btn_led_on"
+                android:layout_width="49dp"
+                android:layout_height="30dp"
+                android:padding="0dp"
+                android:text="LED"
+                app:layout_constraintLeft_toLeftOf="@id/btn_led_off"
+                app:layout_constraintTop_toBottomOf="@+id/btn_led_off" />
+
+            <Button
+                android:id="@+id/btn_door_on"
+                android:layout_width="49dp"
+                android:layout_height="30dp"
+                android:padding="0dp"
+                android:text="Dr1"
+                app:layout_constraintLeft_toLeftOf="@id/btn_door_off"
+                app:layout_constraintTop_toBottomOf="@+id/btn_door_off" />
+
+            <Button
+                android:id="@+id/btn_door2_on"
+                android:layout_width="49dp"
+                android:layout_height="30dp"
+                android:padding="0dp"
+                android:text="Dr2"
+                app:layout_constraintLeft_toLeftOf="@id/btn_door2_off"
+                app:layout_constraintTop_toBottomOf="@+id/btn_door2_off" />
+
+            <Switch
+                android:id="@+id/switch_io"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_marginLeft="8dp"
+                android:text="开启"
+                app:layout_constraintTop_toBottomOf="@id/textView13" />
+
+            <TextView
+                android:id="@+id/tv_io_status"
+                android:layout_width="134dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="2dp"
+                app:layout_constraintLeft_toRightOf="@id/switch_io"
+                app:layout_constraintTop_toBottomOf="@id/textView13" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl_epcs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            app:layout_constraintLeft_toRightOf="@id/cl_gpio"
+            app:layout_constraintTop_toBottomOf="@id/cl_gp">
+
+            <TextView
+                android:id="@+id/tv_epcs"
+                android:layout_width="280dp"
+                android:layout_height="112dp"
+                android:gravity="top"
+                android:text=""
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/iv_barcode2"
+                android:layout_width="500dp"
+                android:layout_height="500dp"
+                android:layout_marginLeft="200dp"
+                app:layout_constraintLeft_toRightOf="@+id/tv_epcs"
+                android:contentDescription="TODO" android:contentDescription="TODO" app:srcCompat="@android:color/background_light" />
+        </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/border_line_white"
+            app:layout_constraintTop_toBottomOf="@id/cl_gpio">
+
+            <TextView
+                android:id="@+id/tv_mqtt_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MQTT:"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/tv_web_status"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="13dp" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content" android:contentDescription="TODO"  android:contentDescription="TODO" 
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content" android:contentDescription="TODO"  android:contentDescription="TODO" 
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
